@@ -3,8 +3,7 @@
 #include <QOpenGLWidget>
 #include <QTimer>
 
-class MyGlWindow :
-    public QOpenGLWidget
+class MyGlWindow : public QOpenGLWidget
 {
     Q_OBJECT
 protected:
@@ -18,4 +17,3 @@ private:
     GLuint vertexBufferID;
     QTimer myTimer;
 };
-

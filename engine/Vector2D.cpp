@@ -1,16 +1,6 @@
-#pragma once
+#include "Vector2D.h"
 
-namespace Math
-{
-struct Vector2D
-{
-    float x, y;
-
-    Vector2D(float x = {}, float y = {}) : x(x), y(y)
-    {
-    }
-};
-
+namespace Math {
 Vector2D operator+(const Vector2D &left, const Vector2D &right)
 {
     return Vector2D{left.x + right.x, left.y + right.y};
@@ -31,5 +21,4 @@ bool operator==(const Vector2D &left, const Vector2D &right)
     return fabs(left.x - right.x) < std::numeric_limits<float>::epsilon() &&
            fabs(left.y - right.y) < std::numeric_limits<float>::epsilon();
 }
-
 } // namespace Math

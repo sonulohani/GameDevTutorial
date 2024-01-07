@@ -1,12 +1,11 @@
 
-#include <GL/glew.h>
 #include <QDebug>
+#include <GL/glew.h>
 #include <cassert>
 
 #include "MyGlWindow.h"
 
-namespace
-{
+namespace {
 float verts[] = {+0.f, +0.1f, -0.1f, -0.1f, +0.1f, -0.1f};
 }
 
